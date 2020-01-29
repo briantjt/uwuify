@@ -1,12 +1,12 @@
 package uwu
 
 import (
-	"bytes"
 	"unicode"
+	"strings"
 )
 
-func UwUify(original string) string {
-	var buff bytes.Buffer
+func UwUify(original []byte) string {
+	var buff strings.Builder
 	strLen := len(original)
 	currentIndex := 0
 	for currentIndex < strLen {

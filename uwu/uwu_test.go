@@ -56,7 +56,7 @@ func TestUwUify(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := UwUify(tt.original); got != tt.want {
+			if got := UwUify([]byte(tt.original)); got != tt.want {
 				t.Errorf("UwUify() = %v, want %v", got, tt.want)
 			}
 		})

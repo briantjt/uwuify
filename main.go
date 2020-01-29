@@ -14,5 +14,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(uwu.UwUify(string(reader)))
+	fmt.Println(uwu.UwUify(reader))
 }
